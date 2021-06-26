@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <h2>Start webcam</h2>
+  <span id='myCallId'></span>
+
+
+  <!-- local & remote video -->
+  <div class='videos'>
+    <span>
+      <h3>Local</h3>
+      <video id='webcamVideo' autoplay playsinline></video>
+    </span>
+
+    <span>
+      <h3>Remote</h3>
+      <video id='remoteVideo' autoplay playsinline></video>
+    </span>
+  </div>
+
+
+  <!-- start webcam -->
+  <button type="button" class="btn btn-primary" id='webcamButton'>Start call</button>
+  <!-- Create call -->
+  <button type="button" class="btn btn-danger" id='hangupButton'>Hang up</button>
+
+  <!-- Answer calls -->
+  <h1>Answer calls</h1>
+  <div id='existing_calls'>
+
+  </div>
+
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

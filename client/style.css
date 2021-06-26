@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+  padding: 10px;
+}
+
+body>* {
+  margin-top: 25px;
+}
+
+.videos {
+  display: flex;
+  justify-content: space-around;
+}
+
+video {
+  width: 300px;
+  object-fit: cover;
+  height: 300px;
+}
